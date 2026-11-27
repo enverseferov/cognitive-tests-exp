@@ -1,0 +1,25 @@
+[project]
+name = "cognitive-test-exp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "openmuse",
+    "openpyxl>=3.1.5",
+    "pygame>=2.6.1",
+    "pyqt6>=6.12.1",
+]
+
+[project.scripts]
+live-cognitive = "cognitive_test_exp.live_cognitive:main"
+plot-cognitive = "cognitive_test_exp.plot_cognitive:main"
+cognitive-battery = "cognitive_test_exp.cognitive_battery:main"
+muse-battery = "cognitive_test_exp.battery:main"
+
+[build-system]
+requires = ["uv_build>=0.12.10,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.uv.sources]
+openmuse = { url = "https://github.com/DominiqueMakowski/OpenMuse/archive/refs/heads/main.zip" }
