@@ -1,0 +1,2 @@
+eeg_data_path: '../../data/eeg/'
+tests_data_path: '../../data/tests/'
